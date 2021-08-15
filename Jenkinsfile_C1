@@ -10,7 +10,6 @@ pipeline {
         stage ('Code Validate') {
             steps {
                 sh"""
-                echo "Perform Validation"
                 mvn  validate
                 """
             }
