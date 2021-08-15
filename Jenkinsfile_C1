@@ -2,10 +2,6 @@ pipeline {
     agent{
         label 'master'
     }
-    tools {
-        maven 'maven'
-        jdk 'java8'
-    }
     
     stages {
         stage ('Code Validate') {
